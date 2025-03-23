@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
 # Get public IP
-#iptables -L > teee.txt
+sudo iptables -L > teee.txt
+cat teee.txt
 #INTERF=$(ifconfig)
 echo "ifconfig ifconfig ifconfig ifconfig"
+ip link add wg0 type wireguard
+ifconfig
 #echo $INTERF
 #systemctl sshd status
-/etc/init.d/sshd status
+
