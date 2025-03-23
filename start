@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Get public IP
+PUBLIC_IP=$(curl -s ifconfig.co)
+echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+echo $PUBLIC_IP
