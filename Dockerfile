@@ -1,5 +1,5 @@
 FROM alpine:3.20
-LABEL description="test" org.opencontainers.image.authors="github.com/AlexUkr73" maintainer="alex"
+LABEL description="Wireguard VPN" org.opencontainers.image.authors="github.com/denisix" maintainer="denisix <denisix@gmail.com>"
 
 # ENVIRONMENT VARIABLES:
 #
