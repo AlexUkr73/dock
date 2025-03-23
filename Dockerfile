@@ -1,5 +1,5 @@
 FROM alpine:3.20
-LABEL description="Wireguard VPN" org.opencontainers.image.authors="github.com/denisix" maintainer="denisix <denisix@gmail.com>"
+LABEL description="Test" org.opencontainers.image.authors="github.com/AlexUkr73" maintainer="alex"
 
 # ENVIRONMENT VARIABLES:
 #
@@ -28,7 +28,7 @@ COPY start /srv/
 # hadolint ignore=DL3008
 RUN chmod 755 /srv/* \
 #    && apk add --no-cache net-tools curl
-    && apk add --no-cache wireguard-tools iptables inotify-tools net-tools libqrencode-tools openresolv procps curl iproute2
+    && apk add --no-cache wireguard-tools iptables inotify-tools net-tools libqrencode-tools openresolv procps curl iproute2 openssh-server
 
 #HEALTHCHECK --interval=5s --timeout=5s CMD /sbin/ip -o li sh wg0 || exit 1
 
