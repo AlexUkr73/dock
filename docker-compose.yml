@@ -1,0 +1,19 @@
+services:
+
+  wireguard:
+    image: AlexUkr73/dock
+    environment:
+      - INTERFACE=eth0
+      - PORT=10000
+    volumes:
+      - ./test/:/etc/
+    ports:
+      - 10000:10000/udp
+    cap_add:
+      - SYS_ADMIN
+      - NET_ADMIN
+      - SYS_MODULE
+    sysctl:
+      - "net.ipv4.conf.all.src_valid_mark=1"
+    privileged: true
+    restart: unless-stopped
