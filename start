@@ -4,3 +4,9 @@
 PUBLIC_IP=$(curl -s ifconfig.co)
 echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 echo $PUBLIC_IP
+WHO=$(whoami)
+echo "who who who who"
+echo $WHO
+INTERF=$(ifconfig)
+echo "ifconfig ifconfig ifconfig ifconfig"
+echo $INTERF
